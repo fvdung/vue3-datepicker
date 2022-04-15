@@ -131,12 +131,14 @@ export default defineComponent({
   position: absolute;
   /* bottom: 0; */
   text-align: center;
-  width: 17.5em;
+  /* width: 17.5em; */
+  width: var(--vdp-width, 17.5em);
   background-color: var(--popout-bg-color);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   padding: 8px 0 1em;
   color: var(--text-color);
+  border: 1px solid var(--vdp-border-color, '#ddd');
 }
 
 .v3dp__popout * {
